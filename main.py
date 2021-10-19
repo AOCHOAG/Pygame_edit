@@ -3,7 +3,7 @@ import pygame
 from main_functions import *
 
 # Initialize the game engine
-pygame.init()
+pygame.init ()
 
 #call main routine
 size = [ 1300 , 600] # Define size of windows
@@ -12,4 +12,6 @@ ancho = int (input ("Introduce el ancho de la ventana:"))
 alto = int (input ("Introduce el alto de la ventana:"))
 size [0] = ancho
 size [1] = alto
-main2 (size)
+azul = (0,0,255)
+titulo = input("Titulo simulador: ")
+main2(size, titulo, azul )

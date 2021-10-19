@@ -6,10 +6,10 @@ from car_model import Car2
 from lane_following import CurvedRoad
 from defines import *
 
-def main2(size):
+def main2(size, titulo, azul):
 
     screen = pygame.display.set_mode(size)
-    pygame.display.set_caption("mdeyo car sim")
+    pygame.display.set_caption(titulo)
     background = pygame.Surface(screen.get_size())
     background.fill((0, 0, 0))
 
@@ -25,7 +25,7 @@ def main2(size):
     car.speed = 100
     # car = laneFollowingCar1()
 
-    screen.fill(WHITE)
+    screen.fill(azul)
 
     # -------- Main Program Loop -----------
     t = 0
@@ -75,7 +75,7 @@ def main2(size):
 
         # First, clear the screen to white. Don't put other drawing commands
         # above this, or they will be erased with this command.
-        screen.fill(WHITE)
+        screen.fill(azul)
 
         # --- Game logic and drawing code combined
 
